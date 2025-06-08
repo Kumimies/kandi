@@ -10,7 +10,7 @@ Projektin alkuperäinen prototyyppi. Visualisoi klamptia käyttäen pythonilla a
 lähde: https://github.com/agilexrobotics/piper_ros/tree/noetic/src/piper_description/urdf
 Tästä muokattu versio jota väritetty klamptia varten jotta nivelet pystyy hahmottamaan
 
-## drawlines.py ja ulkoinenjasisainen.py:
+## drawlines.py, 90asteendemo.py ja ulkoinenjasisainen.py:
 Käytetty hahmottamisen apuna (lähinnä kuvia varten). Käyttää pyplottia.
 
 ## keyboardandendeffectorposition
