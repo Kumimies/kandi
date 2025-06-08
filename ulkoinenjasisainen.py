@@ -29,9 +29,9 @@ def create_transform_matrix(trans, rot, intrinsic=False):
 # Joint definitions
 joints = [
     ("world", "base_link", [0, 0, 0], [0, 0, 0]),
-    ("base_link", "link1", [0, 0, 0.123], [0, 0, -np.pi]),
-    ("link1", "link2", [0.3, 0, 0], [-np.pi/2, -np.pi/3, 0]),
-    ("link2", "link3", [-0.022, -0.25, 0], [0, 0, -0.3]),
+    ("base_link", "link1", [0, 0, 0.123], [-np.pi/2, 0, -np.pi]),
+    ("link1", "link2", [0.3, 0, 0], [0,  0, 5*np.pi/3]),
+    ("link2", "link3", [-0.00, -0.25, 0], [0, 0, -0.3]),
     ("link3", "link4", [0.00009, -0.09, 0], [0, 0, 0]),
 ]
 
@@ -82,9 +82,9 @@ def plot_robot(ax, transforms, joints_order, color_map):
             label = f"{joint}\n({origin[0]:.3f}, {origin[1]:.3f}, {origin[2]:.3f})"
             
             text_offset = [-0.08, 0.05, -0.08] # Adjust these values as needed
-            ax.text(origin[0] + text_offset[0], origin[1] + text_offset[1], origin[2] + text_offset[2], label, fontsize=8)
+            #ax.text(origin[0] + text_offset[0], origin[1] + text_offset[1], origin[2] + text_offset[2], label, fontsize=8)
 
-            print(label)
+            #print(label)
 
 
 # Prepare data
